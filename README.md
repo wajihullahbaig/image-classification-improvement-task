@@ -44,14 +44,21 @@ that the split is stratified so that each class has a near equal chance of being
 
 ## Results
 
-MLP Model
-Raw MLP Train accuracy: 44.59546661376953%
-Test Loss: 0.824209
-Test Accuracy of     0: 85% (138/162)
-Test Accuracy of     1: 75% (133/176)
-Test Accuracy of     2:  5% ( 9/167)
-Test Accuracy of     3:  0% ( 0/158)
-RAW MLP Test Accuracy (Overall): 42% (280/663)
+# MLP Model
+
+- Raw MLP Train accuracy: **44.59546661376953%**
+- Test Loss: **0.824209**
+
+## Test Accuracy by Class
+
+- Test Accuracy of 0: **85% (138/162)**
+- Test Accuracy of 1: **75% (133/176)**
+- Test Accuracy of 2: **5% (9/167)**
+- Test Accuracy of 3: **0% (0/158)**
+
+## Overall Test Accuracy
+
+- RAW MLP Test Accuracy (Overall): **42% (280/663)**
 
 **GIST MLP Train accuracy: 69.57928466796875%
 Test Loss: 0.374313
