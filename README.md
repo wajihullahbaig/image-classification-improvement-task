@@ -1,4 +1,4 @@
-﻿# image-classification-improvement-task
+﻿### image-classification-improvement-task
 
 ## Data set Analysis
 Looking through the dataset, I realized the dataset is high imbalance. Since the task was to use accuracy as a metric. 
@@ -6,28 +6,45 @@ The first thing was to perform a class balance step. This was simply done by aug
 I could have reduced the higher classes in count, but that affects the downstream training step for different models as
 We tend to have lower sample sets. 
 
-Class  differences:
-1          0
-2          6
-0          6
-3          46
-Class  percentages:
-1          0.296774
-2          0.277419
-0          0.277419
-3          0.148387
+Here are your data formatted as tables in Markdown:
 
-After the initial augmentation step, we are at a balanced dataset
-Class  differences:
-3         0
-0         0
-2         0
-1         0
-Class  percentages:
-3         0.25
-0         0.25
-2         0.25
-1         0.25
+**Class Differences Before Augmentation**
+
+| Class | Difference |
+|-------|------------|
+| 1     | 0          |
+| 2     | 6          |
+| 0     | 6          |
+| 3     | 46         |
+
+**Class Percentages Before Augmentation**
+
+| Class | Percentage |
+|-------|------------|
+| 1     | 0.296774   |
+| 2     | 0.277419   |
+| 0     | 0.277419   |
+| 3     | 0.148387   |
+
+**Class Differences After Augmentation**
+
+| Class | Difference |
+|-------|------------|
+| 3     | 0          |
+| 0     | 0          |
+| 2     | 0          |
+| 1     | 0          |
+
+**Class Percentages After Augmentation**
+
+| Class | Percentage |
+|-------|------------|
+| 3     | 0.25       |
+| 0     | 0.25       |
+| 2     | 0.25       |
+| 1     | 0.25       |
+
+You can copy and paste these tables directly into your README file on GitHub. The `|` symbols are used to create table columns, and the `-` symbols are used to create table headers. This will help organize your data and make it easier to read. Let me know if you need help with anything else! 😊
 
 ## Data Augmentation
 410 images are in total available, this set is deemed very low , even splitting this data into train/test will 
@@ -43,23 +60,17 @@ During training, the training dataset is split into 70%,30% ratio for training a
 that the split is stratified so that each class has a near equal chance of being used in training and testing.
 
 ## Results
-
 # MLP Model
-
 - Raw MLP Train accuracy: **44.59546661376953%**
 - Test Loss: **0.824209**
-
 ## Test Accuracy by Class
-
 - Test Accuracy of 0: **85% (138/162)**
 - Test Accuracy of 1: **75% (133/176)**
 - Test Accuracy of 2: **5% (9/167)**
 - Test Accuracy of 3: **0% (0/158)**
 
 ## Overall Test Accuracy
-
 - RAW MLP Test Accuracy (Overall): **42% (280/663)**
-
 **GIST MLP Train accuracy: 69.57928466796875%
 Test Loss: 0.374313
 Test Accuracy of     0: 71% (116/162)
