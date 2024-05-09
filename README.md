@@ -44,7 +44,6 @@ Here are your data formatted as tables in Markdown:
 | 2     | 0.25       |
 | 1     | 0.25       |
 
-You can copy and paste these tables directly into your README file on GitHub. The `|` symbols are used to create table columns, and the `-` symbols are used to create table headers. This will help organize your data and make it easier to read. Let me know if you need help with anything else! 😊
 
 ## Data Augmentation
 410 images are in total available, this set is deemed very low , even splitting this data into train/test will 
@@ -60,41 +59,55 @@ During training, the training dataset is split into 70%,30% ratio for training a
 that the split is stratified so that each class has a near equal chance of being used in training and testing.
 
 ## Results
-# MLP Model
-- Raw MLP Train accuracy: **44.59546661376953%**
-- Test Loss: **0.824209**
-## Test Accuracy by Class
-- Test Accuracy of 0: **85% (138/162)**
-- Test Accuracy of 1: **75% (133/176)**
-- Test Accuracy of 2: **5% (9/167)**
-- Test Accuracy of 3: **0% (0/158)**
+Here are your data formatted as tables in Markdown:
 
-## Overall Test Accuracy
-- RAW MLP Test Accuracy (Overall): **42% (280/663)**
-**GIST MLP Train accuracy: 69.57928466796875%
-Test Loss: 0.374313
-Test Accuracy of     0: 71% (116/162)
-Test Accuracy of     1: 44% (79/176)
-Test Accuracy of     2: 71% (119/167)
-Test Accuracy of     3: 86% (136/158)
-GIST MLP Test Accuracy (Overall): 67% (450/663)
----------------------------------------------------------------------**
-RNN Model
-RAW RNN Train accuracy: 91.84465789794922%
-Test Loss: 0.248792
-Test Accuracy of     0: 90% (146/162)
-Test Accuracy of     1: 62% (110/176)
-Test Accuracy of     2: 70% (117/167)
-Test Accuracy of     3: 92% (146/158)
-RAW RNN Test Accuracy (Overall): 78% (519/663)
+**Raw MLP Model**
 
-GIST RNN Train accuracy: 89.19093322753906%
-Test Loss: 0.096881
-Test Accuracy of     0: 92% (150/162)
-Test Accuracy of     1: 87% (154/176)
-Test Accuracy of     2: 79% (132/167)
-Test Accuracy of     3: 95% (151/158)
-GIST RNN Test Accuracy (Overall): 88% (587/663)
+| Metric | Value |
+|--------|-------|
+| Train Accuracy | 44.59546661376953% |
+| Test Loss | 0.824209 |
+| Test Accuracy of 0 | 85% (138/162) |
+| Test Accuracy of 1 | 75% (133/176) |
+| Test Accuracy of 2 | 5% (9/167) |
+| Test Accuracy of 3 | 0% (0/158) |
+| Overall Test Accuracy | 42% (280/663) |
+
+**GIST MLP Model**
+
+| Metric | Value |
+|--------|-------|
+| Train Accuracy | 69.57928466796875% |
+| Test Loss | 0.374313 |
+| Test Accuracy of 0 | 71% (116/162) |
+| Test Accuracy of 1 | 44% (79/176) |
+| Test Accuracy of 2 | 71% (119/167) |
+| Test Accuracy of 3 | 86% (136/158) |
+| Overall Test Accuracy | 67% (450/663) |
+
+**Raw RNN Model**
+
+| Metric | Value |
+|--------|-------|
+| Train Accuracy | 91.84465789794922% |
+| Test Loss | 0.248792 |
+| Test Accuracy of 0 | 90% (146/162) |
+| Test Accuracy of 1 | 62% (110/176) |
+| Test Accuracy of 2 | 70% (117/167) |
+| Test Accuracy of 3 | 92% (146/158) |
+| Overall Test Accuracy | 78% (519/663) |
+
+**GIST RNN Model**
+
+| Metric | Value |
+|--------|-------|
+| Train Accuracy | 89.19093322753906% |
+| Test Loss | 0.096881 |
+| Test Accuracy of 0 | 92% (150/162) |
+| Test Accuracy of 1 | 87% (154/176) |
+| Test Accuracy of 2 | 79% (132/167) |
+| Test Accuracy of 3 | 95% (151/158) |
+| Overall Test Accuracy | 88% (587/663) |
 
 # Conclusion
 Using two different models with two different features, it is evident that a model with classical features such as GISt can outdo a simple model with raw features. In both cases for RNN and MLP, if we keep the raw features model
