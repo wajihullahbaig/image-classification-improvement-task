@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68.0"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "image-classification-improvement-task"
+version = "0.2.0"
+description = "Comparison of Raw Pixel vs. GIST Descriptor features using MLP and RNN classifiers for imbalanced grayscale image classification."
+readme = "README.md"
+requires-python = ">=3.9"
+dependencies = [
+    "numpy>=1.23",
+    "pandas>=1.5",
+    "opencv-python>=4.7",
+    "scikit-image>=0.20",
+    "scikit-learn>=1.2",
+    "matplotlib>=3.6",
+    "torch>=1.12",
+    "torchvision>=0.13",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest>=7.0",
+]
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+pythonpath = ["src"]
+testpaths = ["tests"]

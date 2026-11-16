@@ -1,0 +1,31 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.egg-info/
+.eggs/
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# OS & Temp
+.DS_Store
+Thumbs.db
+__MACOSX/
+_temp.jpg
+
+# Environments
+.venv/
+venv/
+env/
+.conda/
+
+# Generated artifacts (optional outputs; keep directory structure)
+outputs/metrics/*.png
+outputs/metrics/*.json
+outputs/metrics/*.csv
+!outputs/predictions/*.csv
